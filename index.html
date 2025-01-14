@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airplane Ticket Booking</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Airplane Ticket Booking</h1>
+    </header>
+
+    <main>
+      <section class="booking-form">
+        <h2>Book Your Flight</h2>
+        <form id="bookingForm">
+          <div class="form-group">
+            <label for="departure">Departure</label>
+            <select id="departure" required>
+              <option value="">Select City</option>
+              <option value="Nagpur">Nagpur</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Pune">Pune</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="arrival">Arrival</label>
+            <select id="arrival" required>
+              <option value="">Select City</option>
+              <option value="Bangaluru">Banglaor</option>
+              <option value="kolkata">kolkata</option>
+              <option value="Amravati">Amravati</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="departureDate">Departure Date</label>
+            <input type="date" id="departureDate" required />
+          </div>
+          <div class="form-group">
+            <label for="returnDate">Return Date</label>
+            <input type="date" id="returnDate" />
+          </div>
+          <div class="form-group">
+            <label for="passengers">Passengers</label>
+            <input type="number" id="passengers" min="1" value="1" required />
+          </div>
+          <button type="submit">Book Now</button>
+        </form>
+        <p id="confirmationMessage" class="hidden"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Airplane Booking. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
